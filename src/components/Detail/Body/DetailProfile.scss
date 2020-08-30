@@ -1,0 +1,133 @@
+@font-face {
+    font-family: pokemonText;
+    src: url(../../../assets/PokemonGb-RAeo.ttf);
+}
+
+// All pokemon type colors for Gen 1 (Kanto)
+$color-type-normal: rgb(168,167,122);
+$color-type-fire:  rgb(238,129,48);
+$color-type-water:  rgb(99,144,240);
+$color-type-electric:  rgb(247,208,44);
+$color-type-grass:  rgb(122,199,76);
+$color-type-ice:  rgb(150,217,214);
+$color-type-fighting:  rgb(194,46,40);
+$color-type-poison:  rgb(163,62,161);
+$color-type-ground:  rgb(226,191,101);
+$color-type-flying:  rgb(169,143,243);
+$color-type-psychic:  rgb(249,85,135);
+$color-type-bug:  rgb(166,185,26);
+$color-type-rock:  rgb(182,161,54);
+$color-type-ghost:  rgb(115,87,151);
+$color-type-dragon:  rgb(111,53,252);
+
+.profile-container {
+    font-family: pokemonText;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 3fr 2.5fr 0.5fr;
+
+    .sprite-img {
+        height: 30vh;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .profile-info {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+
+        .row {
+            padding: 1em 0;
+        }
+
+        .row-one-line {
+            display: grid;
+            grid-template-columns: 1fr 1fr 0.5fr;
+        }
+
+        .ability-list {
+            display: grid;
+            grid-template-columns: 1fr;
+
+            .ability{
+                justify-self: center;
+                padding: 0.5em 0;
+            }
+        }
+
+        .type-list {
+            display: grid;
+            grid-template-columns: 1fr;
+
+            .type {
+                justify-self: center;
+                padding: 1em;
+                margin: 0.25em 0;
+                border-radius: 10%;
+                color: white;
+            }
+        }
+    }
+
+}
+
+
+.normal {
+    background-color: $color-type-normal;
+}
+
+.fire {
+    background-color: $color-type-fire;
+}
+
+.water {
+    background-color: $color-type-water;
+}
+
+.electric {
+    background-color: $color-type-electric;
+}
+
+.grass {
+    background-color: $color-type-grass;
+}
+
+.ice {
+    background-color: $color-type-ice;
+}
+
+.fighting {
+    background-color: $color-type-fighting;
+}
+
+.poison {
+    background-color: $color-type-poison;
+}
+
+.ground {
+    background-color: $color-type-ground;
+}
+
+.flying {
+    background-color: $color-type-flying;
+}
+
+.psychic {
+    background-color: $color-type-psychic;
+}
+
+.bug {
+    background-color: $color-type-bug;
+}
+
+.rock {
+    background-color: $color-type-rock;
+}
+
+.ghost {
+    background-color: $color-type-ghost;
+}
+
+.dragon {
+    background-color: $color-type-dragon;
+}

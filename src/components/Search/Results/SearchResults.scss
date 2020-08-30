@@ -1,0 +1,35 @@
+// font from: https://www.fontspace.com/pokemon-gb-font-f9621
+@font-face {
+    font-family: pokemonText;
+    src: url(../../../assets/PokemonGb-RAeo.ttf);
+}
+
+$color-pokecontainer-background: rgba(207, 198, 198, 0.884);
+$color-img-background: rgb(249, 219, 227);
+
+// use a flex box to hold each item
+.search-result-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .poke-container {
+        min-width: 10%;
+        min-height: 25%;
+        background-color: $color-pokecontainer-background;
+        padding: 0.5em;
+        margin: 1em;
+
+        .img-container {
+            background-color: $color-img-background;
+        }
+
+        .poke-text {
+            color: white;
+            text-align: center;
+            font-family: pokemonText;
+            font-size: 0.75em;
+            margin: 0.5em 0;
+        }
+    }
+}

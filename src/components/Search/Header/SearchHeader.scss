@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+$color-search-header-background: rgb(223, 246, 240);
+
+.search-header {
+    background-color: $color-search-header-background;
+
+    .header-text {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bolder;
+        padding: 1em 0 0.5em 1em;
+    }
+}
